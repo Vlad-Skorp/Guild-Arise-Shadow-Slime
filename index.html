@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowSlime Guild</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Monaco, monospace;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: #00ff00;
+            padding: 20px;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .terminal {
+            background-color: #111;
+            border: 2px solid #00ff00;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: linear-gradient(90deg, #000, #222, #000);
+            border: 1px solid #00ff00;
+        }
+        
+        .guild-title {
+            color: #ff00ff;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px #ff00ff;
+            margin-bottom: 10px;
+        }
+        
+        .section {
+            margin: 25px 0;
+            padding: 15px;
+            border-left: 3px solid #00ff00;
+            background-color: #1a1a1a;
+        }
+        
+        .section-title {
+            color: #00ffff;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            text-transform: uppercase;
+        }
+        
+        .requirement {
+            color: #ff4444;
+            margin: 8px 0;
+            padding-left: 15px;
+        }
+        
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 12px;
+            margin: 15px 0;
+        }
+        
+        .stat-item {
+            background-color: #222;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 4px;
+        }
+        
+        .subscription {
+            background-color: #2a1a2a;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ff00ff;
+            border-radius: 6px;
+        }
+        
+        .warning {
+            color: #ff0000;
+            background-color: #300;
+            padding: 12px;
+            border: 1px solid #f00;
+            border-radius: 4px;
+            margin: 15px 0;
+            animation: blink 2s infinite;
+        }
+        
+        .contact-list {
+            background-color: #1a1a2a;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        
+        .contact-item {
+            margin: 8px 0;
+            padding: 8px;
+            background-color: #2a2a3a;
+            border-radius: 4px;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .typewriter {
+            overflow: hidden;
+            border-right: 2px solid #00ff00;
+            white-space: nowrap;
+            animation: typing 3s steps(40, end);
+        }
+        
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        .glow {
+            text-shadow: 0 0 5px currentColor;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="header">
+	    <img src="image/guildImage.jpg" alt="изображение гильдии" width="700" height="390">	
+            <h1 class="guild-title">🟣 ShadowSlime 🟣</h1>
+            <div class="typewriter">// ГИЛЬДИЯ ПРИНЯЛА ОБНОВЛЕНИЕ "TITAN UPDATE" //</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">👋 Приветствие</div>
+            <p>Привет, игрок! Мы приглашаем тебя в нашу гильдию ShadowSlime.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">💰 Условия для вступления</div>
+            <div class="requirement">• Требуется 14 Dс для вступления</div>
+            <div class="requirement">• Ежедневный взнос: 7Dc💰</div>
+            <div class="warning">
+                ⚠️ ЕСЛИ ВЫ НЕ БУДЕТЕ ВЫПОЛНЯТЬ ЕЖЕДНЕВНУЮ НОРМУ - ВАС КИКНУТ МГНОВЕННО! ⚠️
+            <div class="warning">
+                ⏰ ВНИМАНИЕ: Со временем ежедневный взнос будет увеличиваться!
+            </div>
+
+
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⚡ Прокачка гильдии</div>
+            <div class="stat-grid">
+                <div class="stat-item"><span class="emoji">👻</span> Сила теней: <span class="glow">CXIV</span></div>
+                <div class="stat-item"><span class="emoji">👥</span> Больше игроков: <span class="glow">MAX</span></div>
+                <div class="stat-item"><span class="emoji">💎</span> Больше кристаллов: <span class="glow">MAX</span></div>
+                <div class="stat-item"><span class="emoji">💸</span> Больше монет: <span class="glow">MAX</span></div>
+                <div class="stat-item"><span class="emoji">🌎</span> Теневой диапазон: <span class="glow">MAX</span></div>
+                <div class="stat-item"><span class="emoji">📜</span> Дополнительная реликвия: <span class="glow">MAX</span></div>
+                <div class="stat-item"><span class="emoji">👥</span> Теневые слоты: <span class="glow">MAX</span></div>
+                <div class="stat-item"><span class="emoji">⚔️</span> Усиление оружия: <span class="glow">MAX</span></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🚀 Платная проходка</div>
+            <p>Приобретите проходку и избегайте кика даже без внесения кристаллов!</p>
+            
+            <div class="subscription">
+                <div class="requirement"><span class="emoji">💸</span> Неделя: 30 РУБ</div>
+                <div class="requirement"><span class="emoji">💸</span> Месяц: 100 РУБ</div>
+                <div class="requirement"><span class="emoji">💸</span> Навсегда: 500 РУБ</div>
+            </div>
+
+        <div class="section">
+            <div class="section-title">📞 Контакты</div>
+            
+            <div class="contact-list">
+                <p>Для вступления или вопросов пишите офицерам:</p>
+                <div class="contact-item">👮 @Askarik111</div>
+                <div class="contact-item">👮 @Semtuz0</div>
+                <div class="contact-item">👮 @zipka602</div>
+            </div>
+            
+            <div class="contact-list">
+                <p>Для покупки платной проходки:</p>
+                <div class="contact-item">👑 @Vilad_1 (Глава гильдии)</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⚡ Статус системы</div>
+            <div class="stat-item">🟢 Гильдия: ONLINE</div>
+            <div class="stat-item">🟢 Набор: OPEN</div>
+            <div class="stat-item">🟢 Слоты: AVAILABLE</div>
+        </div>
+    </div>
+
+    <script>
+        // Простая анимация для эффекта терминала
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.requirement');
+            elements.forEach((el, index) => {
+                el.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
+photo_2025-08-21_02-00-11.jpg
+</body>
+</html>
